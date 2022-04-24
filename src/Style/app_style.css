@@ -69,9 +69,14 @@ input {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 10px;
-    background-color: lavender;
+    /* background-color: lavender; */
     border-radius: 20px;
     font-size: 15px;
+}
+
+.revealtext {
+    background-color: lavender;
+    border-radius: 20px;
 }
 
 .revealbutton {

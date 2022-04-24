@@ -277,7 +277,9 @@ function App() {
           <button onClick={() => checkAnswer()}>Check</button>
         </div>
         <div class="reveal">
-          {reveal ? <h3>{country}</h3> : <h3>Don't know?</h3>}
+          <div class="revealtext"> 
+            {reveal ? <h3>{country}</h3> : <h3>Don't know?</h3>}
+          </div>
           <button class="revealbutton" onClick={() => revealAnswer()}>Reveal Answer</button>
         </div>
         <div class="new">
