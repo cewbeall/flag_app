@@ -1,0 +1,92 @@
+/* figure out how to make all images the same size
+*/
+
+
+body {
+    background-image: linear-gradient(to right, azure, lavender, azure);
+}
+
+img {
+    /* border: 5px solid grey; */
+    height: 250px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+button {
+    border-radius: 20px;
+    font-family: 'Fredoka One';
+    font-size: 15px;
+}
+
+input {
+    border-radius: 20px;
+    font-family: 'Fredoka One';
+    font-size: 30px;
+    text-align: center;
+}
+
+.all {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    font-family: 'Fredoka One';
+}
+
+.title {
+    font-size: 50px;
+}
+
+.flag {
+    display: flex;
+    margin: auto;
+}
+
+.box {
+    background-color: azure;
+    width: 400px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.enter {
+    margin: 10px;
+    display: grid;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.entertext {
+    background-color: lavender;
+    display: grid;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.reveal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    background-color: lavender;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.revealbutton {
+    height: auto;
+}
+
+.new {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.streak {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
