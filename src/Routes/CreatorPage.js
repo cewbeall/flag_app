@@ -5,7 +5,7 @@ import "../Style/creator_style.css"
 const Creator = () => {
 
     let githubLink = "https://github.com/cewbeall/flag_app.git"
-    let linkedinLink = "www.linkedin.com/in/charlie-beall"
+    let linkedinLink = "https://www.linkedin.com/in/charlie-beall"
     let apiLink = "https://www.countryflagsapi.com/"
 
     return (
