@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import "./Style/app_style.css"
+import {Link} from "react-router-dom"
 
 function App() {
 
@@ -232,7 +233,9 @@ function App() {
   }
 
   const checkAnswer = () => {
-      if (response === country) {
+    let r = response.toLowerCase()
+    let c = country.toLowerCase()
+      if (r === c) {
         if (!isCorrect) {
           setIsCorrect(true);
           // also increment streak
@@ -262,9 +265,13 @@ function App() {
   return (
     <div class="all">
       <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"></link>
-      <h1 class="title">
-        Guess the Flag!
-      </h1>
+      <div class="heading">
+        <h4><Link to="/HowToPlay">How to play</Link></h4>
+        <h1 class="title">
+          Guess the Flag!
+        </h1>
+        <h4>Future link</h4>
+      </div>
       <div class="flag">
         <img src={link}/>
       </div>

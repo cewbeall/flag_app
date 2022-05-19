@@ -1,0 +1,14 @@
+* {
+    font-family: "Fredoka One";  
+}
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
