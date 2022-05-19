@@ -270,7 +270,7 @@ function App() {
         <h1 class="title">
           Guess the Flag!
         </h1>
-        <h4>Future link</h4>
+        <h4><Link to="/Creator">Credits</Link></h4>
       </div>
       <div class="flag">
         <img src={link}/>

@@ -2,6 +2,12 @@
     font-family: "Fredoka One";  
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .heading {
     display: flex;
     justify-content: space-around;
@@ -9,6 +15,7 @@
 
 .instructions {
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 600px;
 }

@@ -1,0 +1,21 @@
+* {
+    font-family: "Fredoka One";  
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.credits {
+    text-align: center;
+}
