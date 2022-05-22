@@ -9,7 +9,7 @@ const HowToPlay = () => {
             <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"></link>
             <h4><Link to="/">Back</Link></h4>
             <div class="content">
-                <div class="heading">
+                <div class="top">
                     <h1>How to Play:</h1>
                 </div>
                 <div class="instructions">

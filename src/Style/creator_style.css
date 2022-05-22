@@ -2,14 +2,14 @@
     font-family: "Fredoka One";  
 }
 
-.heading {
+.creatorHeading {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
 }
 
-.links {
+.creatorLinks {
     display: flex;
     justify-content: space-between;
     flex-direction: column;

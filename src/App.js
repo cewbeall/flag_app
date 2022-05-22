@@ -263,41 +263,40 @@ function App() {
   let link = "https://countryflagsapi.com/png/" + country
 
   return (
-    <div class="all">
-      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"></link>
-      <div class="heading">
-        <h4><Link to="/HowToPlay">How to play</Link></h4>
-        <h1 class="title">
-          Guess the Flag!
-        </h1>
-        <h4><Link to="/Creator">Credits</Link></h4>
-      </div>
-      <div class="flag">
-        <img src={link}/>
-      </div>
-      <div class = "box">
-        <div class="enter">
-          <div class="entertext"> 
-            {entered ? (isCorrect ? <h3>Correct!</h3> : <h3>Incorrect!</h3>) : <h3>Enter an answer</h3>}
-            <input value={response} onChange={e => setResponse(e.target.value)}/>
+    <div class="links">
+      <h4><Link to="/HowToPlay">How to play</Link></h4>
+      <div class="all">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"></link>
+        <div class="heading">
+          <h1>Guess the Flag!</h1>
+        </div>
+        <div class="flag">
+          <img src={link}/>
+        </div>
+        <div class = "box">
+          <div class="enter">
+            <div class="entertext"> 
+              {entered ? (isCorrect ? <h3>Correct!</h3> : <h3>Incorrect!</h3>) : <h3>Enter an answer</h3>}
+              <input value={response} onChange={e => setResponse(e.target.value)}/>
+            </div>
+            <button onClick={() => checkAnswer()}>Check</button>
           </div>
-          <button onClick={() => checkAnswer()}>Check</button>
-        </div>
-        <div class="reveal">
-          <div class="revealtext"> 
-            {reveal ? <h3>{country}</h3> : <h3>Don't know?</h3>}
+          <div class="reveal">
+            <div class="revealtext"> 
+              {reveal ? <h3>{country}</h3> : <h3>Don't know?</h3>}
+            </div>
+            <button class="revealbutton" onClick={() => revealAnswer()}>Reveal Answer</button>
           </div>
-          <button class="revealbutton" onClick={() => revealAnswer()}>Reveal Answer</button>
-        </div>
-        <div class="new">
-          <button onClick={() => setTrigger(!trigger)}>Next Flag</button>
-        </div>
-        <div class="streak">
-          <h3>Streak: {streak}</h3>
-          <h3>Best: {best}</h3>
+          <div class="new">
+            <button onClick={() => setTrigger(!trigger)}>Next Flag</button>
+          </div>
+          <div class="streak">
+            <h3>Streak: {streak}</h3>
+            <h3>Best: {best}</h3>
+          </div>
         </div>
       </div>
-      
+      <h4><Link to="/Creator">Credits</Link></h4>
     </div>
   );
 }
